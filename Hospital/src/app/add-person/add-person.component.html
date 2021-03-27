@@ -1,0 +1,17 @@
+<p>Please record new Person</p>
+<form>
+    <p>First Name:</p>
+    <input type="text" [(ngModel)]="personData.firstName" placeholder="First Name" />
+    <p> Last Name: </p>
+    <input type="text" [(ngModel)]="personData.lastName" placeholder="Last Name" />
+    <p>Age:</p>
+    <input type="text" [(ngModel)]="personData.age" placeholder="Age" />
+    <p> User Name:</p>
+    <input type="text" [(ngModel)]="personData.userName" placeholder="User Name" />
+    <p> Password</p>
+    <input type="password" [(ngModel)]="personData.password" placeholder="Password" />
+    <p> Gender</p>
+    <input type="text" [(ngModel)]="personData.gender" placeholder="Gender" />
+
+    <button (click)="addPerson()"> Add Person</button>
+</form>

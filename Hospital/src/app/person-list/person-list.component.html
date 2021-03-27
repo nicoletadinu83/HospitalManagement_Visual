@@ -1,0 +1,29 @@
+<h4><b>Lista persoanelor</b></h4>
+
+<table>
+    <tr>
+        <th>Id</th>
+        <th> Prenume</th>
+        <th>Nume</th>
+        <th>Varsta</th>
+        <th>User Name</th>
+        <th>Parola</th>
+        <th>Sex</th>
+
+    </tr>
+    <tr *ngFor="let item of persons">
+        <td> {{item.id}}</td>
+        <td>{{item.firstName}}</td>
+        <td>{{item.lastName}}</td>
+        <td>{{item.userName}}</td>
+        <td>{{item.password}}</td>
+        <td>{{item.gender}}</td>
+        <td>
+            <button (click)="delete(item.id"> Delete person</button>
+        </td>
+        <!-- <td *ngFor>"let adress of adress"</td> -->
+    </tr>
+</table>
+<!-- <div *ngFor="let item of persons">{{item.id}} , {{item.firstName}} </div> -->
+
+<button routerLink="addPerson">Add product</button>
