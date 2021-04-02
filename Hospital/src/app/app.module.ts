@@ -8,13 +8,15 @@ import {HttpClientModule} from '@angular/common/http';
 import { AddPersonComponent } from './add-person/add-person.component';
 import { FormsModule } from '@angular/forms';
 import { AdressListComponent } from './adress-list/adress-list.component';
+import { AddAdressComponent } from './add-adress/add-adress.component';
  
 @NgModule({
   declarations: [
     AppComponent,
     PersonListComponent,
     AddPersonComponent,
-    AdressListComponent
+    AdressListComponent,
+    AddAdressComponent
   ],
   imports: [
     BrowserModule,

@@ -18,8 +18,12 @@ export class AdressListComponent implements OnInit {
       this.adressList= receivedAdress);
   }
 
-  delete(id:number){
-    console.log(" Adresa cu id"+ id +" a fost stearsa");
-  }
+  public delete(id:number){
+this.adressService.deleteAdress(id).subscribe(message=>{
+  this.ngOnInit();
+    console.log(" Adresa  cu  " + id+ " a fost stearsa");
+  })
+}
 
+  
 }

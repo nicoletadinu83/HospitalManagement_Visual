@@ -1,0 +1,17 @@
+<p> Te rog inregistreaza adresa noua:</p>
+<form>
+    <p>Id:</p>
+    <input type="text" [(ngModel)]="adressData.id" placeholder="id" />
+    <p> Adresa </p>
+    <input type="text" [(ngModel)]="adressData.address" placeholder="Adresa" />
+    <p>Oras:</p>
+    <input type="text" [(ngModel)]="adressData.city" placeholder="Oras" />
+    <p> Email:</p>
+    <input type="text" [(ngModel)]="adressData.email" placeholder="Email" />
+    <p> Telefon</p>
+    <input type="tel" [(ngModel)]="adressData.noTel" placeholder="Telefon" />
+    <p> Id Persoana</p>
+    <input type="number"  [(ngModel)]="adressData.personDto.id"  placeholder="Id Persoana" /> 
+
+    <button (click)="addAdress()"> Adauga adresa</button>
+</form>
