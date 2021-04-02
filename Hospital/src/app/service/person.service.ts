@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { PersonData } from '../../src/app/model/personData';
+import { PersonData } from '../model/personData';
 import { Observable, of } from 'rxjs';
 
 

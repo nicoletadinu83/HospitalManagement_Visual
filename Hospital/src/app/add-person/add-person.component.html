@@ -11,7 +11,8 @@
     <p> Password</p>
     <input type="password" [(ngModel)]="personData.password" placeholder="Password" />
     <p> Gender</p>
-    <input type="text" [(ngModel)]="personData.gender" placeholder="Gender" />
+    <input type="radio"  [(ngModel)]="personData.gender"  name="gender" value="M" /> Masculin
+    <input type="radio" [(ngModel)]="personData.gender"  name="gender" value="F" /> Feminin
 
     <button (click)="addPerson()"> Add Person</button>
 </form>

@@ -1,4 +1,12 @@
-<h4><b>Lista persoanelor</b></h4>
+
+<div>
+
+<h4><b>Lista persoanelor</b> </h4>
+   <a routerLink="adressList">Lista de adrese</a>
+
+    
+    
+
 
 <table>
     <tr>
@@ -9,21 +17,42 @@
         <th>User Name</th>
         <th>Parola</th>
         <th>Sex</th>
+        <th>Adresa</th>
+        <th>Oras</th>
+        <th>Email</th>
+        <th> Telefon</th>
+
 
     </tr>
     <tr *ngFor="let item of persons">
         <td> {{item.id}}</td>
         <td>{{item.firstName}}</td>
         <td>{{item.lastName}}</td>
+        <td>{{item.age}}</td>
         <td>{{item.userName}}</td>
         <td>{{item.password}}</td>
         <td>{{item.gender}}</td>
+        <td * ngFor=" let person of item.addressDto">
+           <td>{{item.addressDto.address}}</td> 
+           <td> {{item.addressDto.city}}</td>
+           <td> {{item.addressDto.email}}</td>
+           <td>{{item.addressDto.noTel}}</td>
+
+
+        <!-- </td>
+        <td *ngIf="item.addressDto">
+            <p>{{item.addressDto.address}}, {{item.addressDto.city}}, {{item.addressDto.email}},{{item.addressDto.noTel}}  </td>
+        <td *ngIf="item.addressDto">{{item.addressDto.city}} </td>
+        <td *ngIf="item.addressDto">{{item.addressDto.email}} </td>
+        <td *ngIf="item.addressDto">{{item.addressDto.noTel}} </td> -->
         <td>
             <button (click)="delete(item.id)"> Delete person</button>
         </td>
-        <!-- <td *ngFor>"let adress of adress"</td> -->
+        
     </tr>
 </table>
-<!-- <div *ngFor="let item of persons">{{item.id}} , {{item.firstName}} </div> -->
 
-<button routerLink="addPerson">Add product</button>
+<button routerLink="addPerson">Go to Add Person</button>
+
+
+</div>

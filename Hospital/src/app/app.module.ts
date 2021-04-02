@@ -7,12 +7,14 @@ import { PersonListComponent } from './person-list/person-list.component';
 import {HttpClientModule} from '@angular/common/http';
 import { AddPersonComponent } from './add-person/add-person.component';
 import { FormsModule } from '@angular/forms';
-
+import { AdressListComponent } from './adress-list/adress-list.component';
+ 
 @NgModule({
   declarations: [
     AppComponent,
     PersonListComponent,
-    AddPersonComponent
+    AddPersonComponent,
+    AdressListComponent
   ],
   imports: [
     BrowserModule,

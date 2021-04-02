@@ -1,6 +1,6 @@
 import { Component, OnInit, ɵAPP_ID_RANDOM_PROVIDER } from '@angular/core';
 import { PersonData } from '../../../src/app/model/personData';
-import { PersonService } from '../person.service';
+import { PersonService } from '../service/person.service';
 @Component({
   selector: 'app-person-list',
   templateUrl: './person-list.component.html',

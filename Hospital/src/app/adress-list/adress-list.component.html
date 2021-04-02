@@ -1,0 +1,28 @@
+<p> Lista de adrese</p>
+<table>
+    <tr>
+        <th>Id</th>
+        <th> Adresa</th>
+        <th>Oras</th>
+        <th>Email</th>
+        <th>Telefon</th>
+        <th>Prenume</th>
+        <th>Nume</th>
+
+    </tr>
+    <tr *ngFor="let item of adressList">
+        <td> {{item.id}}</td>
+        <td>{{item.address}}</td>
+        <td>{{item.city}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.noTel}}</td>
+        <td *ngFor=" let person of item.personDto">
+        <td>{{item.personDto.firstName}}, {{item.addressDto.lastName}} </td>
+        <td>
+            <button (click)="delete(item.id)"> Delete person</button>
+        </td>
+        
+    </tr>
+</table>
+
+<!-- <button routerLink="addAdress">Go to Add Person</button> -->
